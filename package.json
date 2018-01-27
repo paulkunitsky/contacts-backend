@@ -1,0 +1,23 @@
+{
+  "name": "rest-lynda",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "mongod": "mongod --dbpath ./db",
+    "start": "node ./src/app.js --exec babel-node -e js",
+    "dev": "nodemon ./src/app.js --exec babel-node -e js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "colors": "^1.1.2",
+    "express": "^4.16.2",
+    "mongoose": "^4.13.6"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "nodemon": "^1.12.4"
+  }
+}
